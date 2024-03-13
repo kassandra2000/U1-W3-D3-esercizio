@@ -11,20 +11,15 @@ const mainfunction = function () {
 
     const p = document.createElement("p");
     const btn2 = document.createElement("button");
+    btn2.className = "btn2";
     btn2.innerText = "X";
-    p.appendChild(btn2);
+    div.appendChild(btn2);
     p.innerText = input.value; //valore
     div.appendChild(p);
     const section = document.getElementById("section-2");
     section.appendChild(div);
     input.value = "";
   };
-  //   } else {
-  //     btn.onclick = () => {
-  //      if (input.value === "" || input.value === " ") {
-  //         alert("EHI DEVI INSERIRE QUALCOSA QUI!!!");
-  //       }
-  //     };
 };
 
 const main = document.querySelector("main");

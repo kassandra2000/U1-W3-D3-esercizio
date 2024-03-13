@@ -52,6 +52,9 @@ div.card-style {
     box-shadow: 1px 5px 8px rgb(201, 158, 165);
   width: 242px;
   margin: 5px 3.5px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row-reverse;
 }
 div.card-style:hover{
     box-shadow: 1px 2px 4px rgb(240, 198, 204);
@@ -95,4 +98,19 @@ p{
 
 input:hover{
     border: none;
+}
+
+button.btn2{
+    height: 23px;
+    position: relative;
+    top: 17px;
+    border: none;
+    box-shadow: 1px 2px 4px rgb(240, 99, 122);
+    background-color: rgb(212, 107, 107);
+    color: white;
+}
+button.btn2:hover{
+    background-color: pink;
+    color: rgb(240, 110, 132);
+    font-weight: bold;
 }
