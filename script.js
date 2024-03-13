@@ -19,6 +19,9 @@ const mainfunction = function () {
     const section = document.getElementById("section-2");
     section.appendChild(div);
     input.value = "";
+    btn2.onclick = (e) => {
+      e.target.closest(".card-style").remove;
+    };
   };
 };
 
