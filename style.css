@@ -38,6 +38,8 @@ main section {
 }
 
 #section-2 {
+    position: relative;
+    top: -40px;
   width: 500px;
   display: flex;
   justify-content: center;
@@ -45,8 +47,13 @@ main section {
 }
 
 div.card-style {
-  border: 1px solid grey;
-  width: 248px;
+    box-shadow: 1px 2px 8px rgb(201, 158, 165);
+  /* border: 1px solid grey; */
+  width: 245px;
+  margin: 5px 1.5px;
+}
+div.card-style:hover{
+    box-shadow: 1px 2px 4px pink;
 }
 
 div h1{
