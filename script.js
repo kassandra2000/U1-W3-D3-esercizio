@@ -1,27 +1,30 @@
 const mainfunction = function () {
   const input = document.getElementById("nameInput");
   const btn = document.getElementById("btn");
-  if (input.value !== "" || input.value !== " ") {
-    btn.onclick = () => {
-      const div = document.createElement("div");
-      div.className = "card-style";
-      const section = document.getElementById("section-2");
-      section.appendChild(div);
-      const p = document.createElement("p");
-      p.innerText = "nome-card";
-      div.appendChild(p);
+  const form = document.querySelector("#section-1 form");
 
-      p.innerText = input.value; //valore
-      input.value = "";
-    };
-  } else {
-    btn.onclick = () => {
-      while (input.value === "" || input.value === " ") {
-        alert("EHI DEVI INSERIRE QUALCOSA QUI!!!");
-      }
-    };
-  }
-  console.log(input.value)
+  form.onsubmit = (e) => {
+    e.preventDefault();
+
+    const div = document.createElement("div");
+    div.className = "card-style";
+
+    const p = document.createElement("p");
+    const btn2 = document.createElement("button");
+    btn2.innerText = "X";
+    p.appendChild(btn2);
+    p.innerText = input.value; //valore
+    div.appendChild(p);
+    const section = document.getElementById("section-2");
+    section.appendChild(div);
+    input.value = "";
+  };
+  //   } else {
+  //     btn.onclick = () => {
+  //      if (input.value === "" || input.value === " ") {
+  //         alert("EHI DEVI INSERIRE QUALCOSA QUI!!!");
+  //       }
+  //     };
 };
 
 const main = document.querySelector("main");
