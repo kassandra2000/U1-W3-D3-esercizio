@@ -1,0 +1,60 @@
+body {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(233, 146, 146);
+  font-size: 2em;
+}
+
+#section-1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+  width: 500px;
+}
+
+form input,
+form button {
+    position: relative;
+    top: -4.5px;
+    
+}
+form button{
+    background-color: rgb(247, 208, 219);
+    border-radius: 3px;
+    color: rgb(185, 95, 117);
+    font-weight: bold;
+}
+
+form button:hover{
+    background-color: rgb(235, 148, 174);
+    color:white
+    
+}
+main section {
+  margin-top: 100px;
+  background-color: rgb(250, 221, 221);
+  box-shadow: 1px 4px 4px rgb(133, 16, 36);
+}
+
+#section-2 {
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+div.card-style {
+  border: 1px solid grey;
+  width: 248px;
+}
+
+div h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   font-size: 2em;
+   color: white;
+   position: relative;
+   top: 40px;
+}
